@@ -20,8 +20,32 @@ And of course, since riak is written in erlang, we'll need erlang as well
 ```shell
 sudo apt-get install erlang
 ```
+And others...
+```shell
+sudo apt-get install g++
+```
 # 3. Install Riak
 Clone from Riak repo and checkout to branch 'develop-3.2'
 ```shell
 git clone https://github.com/basho/riak.git
+```
+Choose branch, for example 'riak-3.2.0',
+```shell
+git checkout riak-3.2.0
+```
+And start install
+```shell
+make rel
+```
+# FAQ
+Sometimes I can't fetch repo with make all, for example 'leveled'
+```shell
+git clone https://github.com/martinsumner/leveled
+git checkout a033e280e67931582cc9625993268db126abb4ff
+cp -R cp -R ~/leveled/ ~/riak/_build/default/lib
+```
+Where I checkouted to version which ref in fetch
+```shell
+Fetching leveled (from {git,"https://github.com/martinsumner/leveled",
+                   {ref,"a033e280e67931582cc9625993268db126abb4ff"}})
 ```
