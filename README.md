@@ -1,5 +1,5 @@
 # What is this repo about?
-While reading the book "Seven Databases in Seven Weeks" 1st ed., I encountered difficulties in installing Riak (3th chapter). When trying to build a repository, many dependencies were not automatically installed. So that I wouldn't forget what to do and how to do it, I decided to leave a brief Riak installation manual somewhere. The instruction is relevant for the "develop-3.2" branch.
+While reading the book "Seven Databases in Seven Weeks" 1st ed., I encountered difficulties in installing Riak (3th chapter). When trying to build a repository, many dependencies were not automatically installed. So that I wouldn't forget what to do and how to do it, I decided to leave a brief Riak installation manual somewhere. The instruction is relevant for the "develop" branch.
 # Instruction
 ## 1. Prep Linux
 Doing the routine steps when installing a new Linux installation
@@ -29,16 +29,14 @@ sudo apt-get install libsnappy-dev
 sudo apt-get install libpam0g-dev
 ```
 # 3. Install Riak
-Clone from Riak repo and checkout to branch 'develop-3.2'
+Clone Riak repo.
 ```shell
 git clone https://github.com/basho/riak.git
 ```
-Choose branch, for example 'riak-3.2.0',
+Choose branch, I use 'develop' (because riak-3.2.0, doesn't work, idk why, and riak-3.0.9 doesn't work with erlang 24).
+And build project with "devrel" to make multiple databases for experimentals.
 ```shell
-git checkout riak-3.2.0
-```
-And build project with "devrel" to make multiple databases for experimentals (see book)
-```shell
+make devclean
 make devrel
 ```
 In new versions of Riak, 8 databases are created instead of 3.
