@@ -36,10 +36,11 @@ Choose branch, for example 'riak-3.2.0',
 ```shell
 git checkout riak-3.2.0
 ```
-And start install
+And build project with "devrel" to make multiple databases for experimentals (see book)
 ```shell
-make rel
+make devrel
 ```
+In new versions of Riak, 8 databases are created instead of 3.
 # FAQ
 Sometimes I can't fetch repo with make all, for example 'leveled'
 ```shell
