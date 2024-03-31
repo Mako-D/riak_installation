@@ -7,7 +7,6 @@ Doing the routine steps when installing a new Linux installation
 sudo apt-get update
 sudo apt-get upgrade
 ```
-And create new user. [You can't setup Riak with root](https://stackoverflow.com/questions/14555602/riak-not-starting)
 # 2. Install dependent packages
 Since we will be installing Riak from the Git repository, we will need to install Git
 ```shell
