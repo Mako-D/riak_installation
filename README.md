@@ -32,7 +32,10 @@ Clone Riak repo.
 ```shell
 git clone https://github.com/basho/riak.git
 ```
-Choose branch, I use 'develop' (because riak-3.2.0, doesn't work, idk why, and riak-3.0.9 doesn't work with erlang 24).
+Choose branch, I use 'develop' (because riak-3.2.0, doesn't work, idk why, and riak-3.0.9 doesn't work with erlang 24). In my case, the commit that was relevant in the “develop” branch worked.
+```
+b8eb83a1348db9ebb3a85963689cf9b3f9594ac4
+```
 And build project with "devrel" to make multiple databases for experimentals.
 ```shell
 make devclean
