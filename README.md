@@ -63,7 +63,7 @@ cd ~
 git clone https://github.com/martinsumner/leveled
 cd leveled
 git checkout a033e280e67931582cc9625993268db126abb4ff
-cp -R cp -R ~/leveled/ ~/riak/_build/default/lib
+cp -R ~/leveled/ ~/riak/_build/default/lib
 ```
 Where I checkouted to version which ref in fetch
 ```shell
